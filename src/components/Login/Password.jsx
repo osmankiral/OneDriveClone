@@ -7,6 +7,7 @@ const Password = ({ email }) => {
   const navigate = useNavigate();
 console.log(email,password)
   const handleSubmit = async (e) => {
+    //Veritabanına kullanıcının email ve şifresini post etme yani gönderme işlemi
     e.preventDefault();
     try {
       const response = await axios.post("https://onedrivebackend-5a68774f51f4.herokuapp.com/api/users", {

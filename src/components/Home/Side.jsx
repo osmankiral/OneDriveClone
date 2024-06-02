@@ -15,7 +15,7 @@ const Side = () => {
           <span className="text-white my-auto">Yeni ekle</span>
         </button>
         <div className="mt-8 ml-3">
-          <h1 className="font-semibold text-sm">Ceren Baykaloğlu</h1>
+          <h1 className="font-semibold text-sm">Hoşgeldiniz</h1>
           <div className="flex mt-4 gap-3">
             <VscFileSymlinkDirectory size={19} />
             <h1 className="font-semibold text-sm">Dosyalarım</h1>

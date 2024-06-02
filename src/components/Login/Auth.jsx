@@ -16,7 +16,6 @@ const Auth = ({email, setEmail}) => {
           <button  className="bg-[#0067B8] text-white px-10 py-1 hover:bg-blue-600">İleri</button></Link>
         </div>
       </div>
-      
     </div>
   )
 }
