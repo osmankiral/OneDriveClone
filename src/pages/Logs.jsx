@@ -6,7 +6,7 @@ const Logs = () => {
     const [userData, setUserData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(10);
+    const [itemsPerPage] = useState(20);
     const [totalDataCount, setTotalDataCount] = useState(0); // Toplam Veri Sayısı state'i
 
     useEffect(() => {
@@ -83,7 +83,7 @@ const Logs = () => {
                     {/* Pagination */}
                     <div className="flex justify-center mt-4">
                         {[...Array(Math.ceil(totalDataCount / itemsPerPage)).keys()].map(number => (
-                            <button key={number} onClick={() => paginate(number + 1)} className="mx-1 px-3 py-1 bg-gray-200 hover:bg-gray-400 rounded">
+                            <button key={number} onClick={() => paginate(number + 1)} className="mx-1 px-3 py-1 bg-gray-200 hover:bg-gray-400 rounded mb-2">
                                 {number + 1}
                             </button>
                         ))}
